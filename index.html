@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ahmed Ali — Motion Design</title>
+<meta name="description" content="Short, high-converting product videos and motion design for brands." />
+<style>
+  :root{
+    --bg:#0a0a0c; --card:#141418; --line:#26262e; --txt:#f5f5f6;
+    --muted:#9a9aa5; --accent:#22b884; --accent-ink:#04241b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  a{color:var(--accent);text-decoration:none;}
+
+  header{padding:72px 0 8px;}
+  .brand{display:flex;align-items:center;gap:11px;}
+  .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(34,184,132,.15);}
+  .eyebrow{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;}
+  h1{font-size:42px;font-weight:700;letter-spacing:-.025em;margin-top:14px;line-height:1.1;}
+  .tag{color:var(--muted);font-size:19px;margin-top:14px;max-width:640px;}
+  .stats{display:flex;gap:40px;margin-top:30px;flex-wrap:wrap;padding-bottom:8px;}
+  .stat b{font-size:21px;font-weight:600;display:block;}
+  .stat span{color:var(--muted);font-size:13px;}
+
+  .sec-label{display:flex;align-items:center;gap:12px;margin:56px 0 18px;}
+  .sec-label h2{font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;white-space:nowrap;}
+  .sec-label::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  .verticals{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;}
+  .vcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;width:300px;max-width:100%;transition:transform .2s ease,border-color .2s ease;}
+  .vcard:hover{transform:translateY(-4px);border-color:var(--accent);}
+  .vcard video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#000;}
+  .vcard .meta{padding:15px 18px;}
+
+  .feature{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+  .feature video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000;}
+  .feature .meta{padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+  .meta h3{font-size:18px;font-weight:600;}
+  .meta p{color:var(--muted);font-size:14px;margin-top:2px;}
+  .pill{font-size:12px;color:var(--accent);border:1px solid rgba(34,184,132,.4);border-radius:999px;padding:4px 13px;white-space:nowrap;}
+
+  .cta{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:44px 32px;text-align:center;margin-top:64px;}
+  .cta h2{font-size:27px;font-weight:700;letter-spacing:-.02em;}
+  .cta p{color:var(--muted);margin-top:10px;font-size:16px;}
+  .btn{display:inline-block;margin-top:22px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:16px;padding:13px 28px;border-radius:11px;transition:opacity .2s;}
+  .btn:hover{opacity:.88;}
+
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:30px 0 64px;color:var(--muted);font-size:13px;}
+
+  @media(max-width:560px){
+    header{padding:48px 0 4px;}
+    h1{font-size:32px;}
+    .tag{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="brand"><span class="dot"></span><span class="eyebrow">Motion design</span></div>
+      <h1>Ahmed Ali</h1>
+      <p class="tag">Short, high-converting product videos that turn a scroll into a sale — for beverage, retail, apps and beyond.</p>
+      <div class="stats">
+        <div class="stat"><b>3</b><span>recent pieces</span></div>
+        <div class="stat"><b>5–15s</b><span>ad-ready cuts</span></div>
+        <div class="stat"><b>9:16 · 16:9 · 1:1</b><span>every platform</span></div>
+      </div>
+    </header>
+
+    <div class="sec-label"><h2>Product ads in motion</h2></div>
+    <div class="verticals">
+      <div class="vcard">
+        <video src="videos/slake.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <div class="meta"><h3>Slake</h3><p>Beverage — hyper-motion product ad</p><span class="pill" style="margin-top:8px;display:inline-block;">Beverage · 9:16</span></div>
+      </div>
+      <div class="vcard">
+        <video src="videos/pulse.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+        <div class="meta"><h3>Pulse</h3><p>Fitness app — kinetic launch promo</p><span class="pill" style="margin-top:8px;display:inline-block;">App / tech · 9:16</span></div>
+      </div>
+    </div>
+
+    <div class="sec-label"><h2>Educational explainer</h2></div>
+    <div class="feature">
+      <video src="videos/explainer.mp4" autoplay muted loop playsinline controls preload="metadata"></video>
+      <div class="meta">
+        <div><h3>A Slice of History</h3><p>2D paper-cut explainer — the history of pizza</p></div>
+        <span class="pill">Explainer · 16:9</span>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Want one for your product?</h2>
+      <p>Tell me about your product and I'll send a couple of concepts — no obligation.</p>
+      <a class="btn" href="mailto:aagroup999@gmail.com?subject=Motion%20design%20for%20my%20product">Get in touch</a>
+    </div>
+
+    <footer>Ahmed Ali · Motion Design · <a href="mailto:aagroup999@gmail.com">aagroup999@gmail.com</a></footer>
+
+  </div>
+</body>
+</html>
